@@ -1,5 +1,21 @@
+var generateTableOfContents = function(templateData) {
+    //const {title, description, installation, usage, contribution, license, tests, email, githubLink} = templateData;
+    //var tOCArray = [title,description,installation,usage,contribution,license,tests,email,githubLink];
+    tOCArray = Object.keys(templateData);
+    var tOC = ``;
+    tOCArray.forEach((item,index) => {
+        if (index != 0) {
+            tOC += `
+            - [${index}: ${item}] (#${item})
+            `;
+        }
+    });
+    return tOC;
+};
+
+
 module.exports = templateData => {
-    const {title, description, contents, installation, usage, contribution, license, tests} = templateData;
+    const {title, description, installation, usage, contribution, license, tests, email, githubLink} = templateData;
     return `
     # <${title}>
 
@@ -9,10 +25,10 @@ module.exports = templateData => {
 
     ## Table of Contents (Optional)
 
-    ${contents}
+    ${generateTableOfContents(templateData)}
 
     ## Installation
-
+ 
     ${installation}
 
     ## Usage
@@ -33,6 +49,11 @@ module.exports = templateData => {
     ## Tests
 
     ${tests}
+
+    ## Questions
+
+    ${email} 
+    ${githubLink}
 
     `;
 };

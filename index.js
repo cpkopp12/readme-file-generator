@@ -18,11 +18,6 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'contents',
-        message: 'Enter a table of contents:'
-    },
-    {
-        type: 'input',
         name: 'installation',
         message: 'Enter installation instructions:'
     },
@@ -45,6 +40,16 @@ const questions = [
         type: 'input',
         name: 'tests',
         message: 'Enter test instructions:'
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'Enter email for questions:'
+    },
+    {
+        type: 'input',
+        name: 'githubLink',
+        message: 'Enter link to Git Hub:'
     }
 ];
 
@@ -52,19 +57,37 @@ const promptUser = () => {
     return inquirer.prompt(questions);
 }
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();
-
+/*  PROMPT USER
 promptUser()  
     .then(userData => {
+        console.log(userData);
         return generateTemplate(userData);
     })
     .then(template => {
         return writeMarkdown(template);
+    })
+    .then(writeMarkdownResponse => {
+        console.log(writeMarkdownResponse);
     });
+    */
+
+/* TEST DATA */
+
+testData = {
+    title: 'My Title',
+    description: 'My Description',
+    installation: 'My Installation',
+    usage: 'My Usage',
+    license: 'My license',
+    contribution: 'My contribution',
+    tests: 'My tests',
+    email: 'my email',
+    githubLink: 'my git link'
+};
+var template = generateTemplate(testData);
+writeMarkdown(template)
+    .then(writeMarkdownResponse => {
+        console.log(writeMarkdownResponse);
+    });
+
+

@@ -1,3 +1,4 @@
+// Generate Template for question section from user data
 var generateQuestionSection = function(questionSec) {
     
     const {email, githubLink, instructions} = questionSec;
@@ -22,6 +23,7 @@ Contact Instructions: ${instructions}`;
     return questionsTemplate;
 }
 
+//Generate the license badge from the user data (list input)
 var generateLicenseBadge = function(license) {
     license = license.replaceAll(' ','');
     license = license.replaceAll('.','');
@@ -44,19 +46,25 @@ var generateLicenseBadge = function(license) {
     return badgeLink;
 }
 
+//Generate Table of Contents from the user input
 var generateTableOfContents = function(templateData) {
-    //const {title, description, installation, usage, contribution, license, tests, email, githubLink} = templateData;
-    //var tOCArray = [title,description,installation,usage,contribution,license,tests,email,githubLink];
     var tOCArrayKeys = Object.keys(templateData);
     var tOCArrayValues = Object.values(templateData);
+    //need to stop loop at email, goes under questions
+    console.log(tOCArrayKeys);
+    tOCArrayKeys = tOCArrayKeys.slice(0,tOCArrayKeys.findIndex(i => i == 'email'));
+    console.log(tOCArrayKeys);
     var tOC = ``;
     tOCArrayKeys.forEach((item,index) => {
         if (index != 0 && tOCArrayValues[index] != '') {
             tOC += `
-- [${index}: ${item}](#${item})
+- [${item}](#${item})
 `;
         }
     });
+    tOC += `
+- [Questions](#questions)
+`;
     return tOC;
 };
 

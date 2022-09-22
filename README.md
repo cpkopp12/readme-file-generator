@@ -8,23 +8,19 @@ My Description
 ## Table of Contents (Optional)
 
 
-- [1: description](#description)
+- [description](#description)
 
-- [2: installation](#installation)
+- [installation](#installation)
 
-- [3: usage](#usage)
+- [usage](#usage)
 
-- [4: license](#license)
+- [license](#license)
 
-- [5: contribution](#contribution)
+- [contribution](#contribution)
 
-- [6: tests](#tests)
+- [tests](#tests)
 
-- [7: email](#email)
-
-- [8: githubLink](#githubLink)
-
-- [9: instructions](#instructions)
+- [Questions](#questions)
 
 
 ## Installation

@@ -64,7 +64,7 @@ const promptUser = () => {
     return inquirer.prompt(questions);
 }
 
-/*  PROMPT USER 
+/*  PROMPT USER */
 promptUser()  
     .then(userData => {
         console.log(userData);
@@ -76,9 +76,9 @@ promptUser()
     .then(writeMarkdownResponse => {
         console.log(writeMarkdownResponse);
     });
-   */ 
+   
 
-/* TEST DATA */
+/* TEST DATA 
 
 testData = {
     title: 'My Title',
@@ -96,7 +96,7 @@ var template = generateTemplate(testData);
 writeMarkdown(template)
     .then(writeMarkdownResponse => {
         console.log(writeMarkdownResponse);
-    });
+    }); */
 
 
 

@@ -1,58 +1,58 @@
 
-# My Title        [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# My Title        [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 ## Description
 
-My Description
+this is a descriptions
 
-## Table of Contents (Optional)
+## Table of Contents
 
 
-- [description](#description)
+- [Description](#description)
 
-- [installation](#installation)
+- [Installation](#installation)
 
-- [usage](#usage)
+- [Usage](#usage)
 
-- [license](#license)
+- [License](#license)
 
-- [contribution](#contribution)
+- [Contribution](#contribution)
 
-- [tests](#tests)
+- [Tests](#tests)
 
 - [Questions](#questions)
 
 
 ## Installation
  
-My Installation
+these are installation instructions
 
 ## Usage
 
-My Usage
+information pretaining to usage
     
 
-## Credits
+## Contribution
 
-My contribution
+these are my contributors
 
 
 ## License
 
-MIT License
+Licensed under :GNU GPLv3
 
 
 ## Tests
 
-My tests
+these are instructions for testing
 
 ## Questions
 
 
-Email: my email
+Email: cpkopp@gmail.com
 
-GitHub Link: [my git link](#my git link)
+GitHub Link: [https://github.com/cpkopp12](#https://github.com/cpkopp12)
 
-Contact Instructions: my instructions
+Contact Instructions: instructions for contacting with questions
 
     

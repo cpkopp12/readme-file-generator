@@ -51,14 +51,13 @@ var generateTableOfContents = function(templateData) {
     var tOCArrayKeys = Object.keys(templateData);
     var tOCArrayValues = Object.values(templateData);
     //need to stop loop at email, goes under questions
-    console.log(tOCArrayKeys);
     tOCArrayKeys = tOCArrayKeys.slice(0,tOCArrayKeys.findIndex(i => i == 'email'));
-    console.log(tOCArrayKeys);
     var tOC = ``;
     tOCArrayKeys.forEach((item,index) => {
         if (index != 0 && tOCArrayValues[index] != '') {
+            var capitalItem = tOCArrayKeys[index].charAt(0).toUpperCase() + tOCArrayKeys[index].slice(1);
             tOC += `
-- [${item}](#${item})
+- [${capitalItem}](#${item})
 `;
         }
     });
@@ -78,7 +77,7 @@ module.exports = templateData => {
 
 ${description}
 
-## Table of Contents (Optional)
+## Table of Contents
 
 ${generateTableOfContents(templateData)}
 
@@ -91,14 +90,14 @@ ${installation}
 ${usage}
     
 
-## Credits
+## Contribution
 
 ${contribution}
 
 
 ## License
 
-${license}
+Licensed under :${license}
 
 
 ## Tests

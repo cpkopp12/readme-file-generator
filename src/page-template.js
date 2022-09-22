@@ -1,10 +1,11 @@
 var generateTableOfContents = function(templateData) {
     //const {title, description, installation, usage, contribution, license, tests, email, githubLink} = templateData;
     //var tOCArray = [title,description,installation,usage,contribution,license,tests,email,githubLink];
-    tOCArray = Object.keys(templateData);
+    var tOCArrayKeys = Object.keys(templateData);
+    var tOCArrayValues = Object.values(templateData);
     var tOC = ``;
-    tOCArray.forEach((item,index) => {
-        if (index != 0) {
+    tOCArrayKeys.forEach((item,index) => {
+        if (index != 0 && tOCArrayValues[index] != '') {
             tOC += `
             - [${index}: ${item}] (#${item})
             `;

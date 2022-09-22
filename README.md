@@ -1,12 +1,12 @@
- # <My Title>         [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# <My Title>         [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-    ## Description
+## Description
 
-    My Description
+My Description
 
-    ## Table of Contents (Optional)
+## Table of Contents (Optional)
 
-    
+
             - [1: description] (#description)
             
             - [2: installation] (#installation)
@@ -26,33 +26,33 @@
             - [9: instructions] (#instructions)
             
 
-    ## Installation
+## Installation
  
-    My Installation
+My Installation
 
-    ## Usage
+## Usage
 
-    My Usage
+My Usage
     
 
-    ## Credits
+## Credits
 
-    My contribution
-
-
-    ## License
-
-    MIT License
+My contribution
 
 
-    ## Tests
+## License
 
-    My tests
+MIT License
 
-    ## Questions
 
-    Email: my email
+## Tests
+
+My tests
+
+## Questions
+
+Email: my email
         GitHub Link: [my git link] (#my git link)
         Contact Instructions: my instructions
 
-    
+       

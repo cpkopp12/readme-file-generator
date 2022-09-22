@@ -97,7 +97,7 @@ ${contribution}
 
 ## License
 
-Licensed under :${license}
+Licensed under: ${license}
 
 
 ## Tests

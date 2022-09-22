@@ -3,15 +3,18 @@ var generateQuestionSection = function(questionSec) {
     const {email, githubLink, instructions} = questionSec;
     var questionsTemplate = ``;
     if (email != ''){
-        questionsTemplate += `Email: ${email}
-        `;
+        questionsTemplate += `
+Email: ${email}
+`;
     }
     if (githubLink != ''){
-        questionsTemplate += `GitHub Link: [${githubLink}] (#${githubLink})
-        `;
+        questionsTemplate += `
+GitHub Link: [${githubLink}](#${githubLink})
+`;
     }
     if (instructions != ''){
-        questionsTemplate += `Contact Instructions: ${instructions}`;
+        questionsTemplate += `
+Contact Instructions: ${instructions}`;
     }
 
 
@@ -50,7 +53,7 @@ var generateTableOfContents = function(templateData) {
     tOCArrayKeys.forEach((item,index) => {
         if (index != 0 && tOCArrayValues[index] != '') {
             tOC += `
-- [${index}: ${item}] (#${item})
+- [${index}: ${item}](#${item})
 `;
         }
     });
@@ -61,7 +64,7 @@ var generateTableOfContents = function(templateData) {
 module.exports = templateData => {
     const {title, description, installation, usage, contribution, license, tests, ...questionSec} = templateData;
     return `
-# <${title}>         ${generateLicenseBadge(license)}
+# ${title}        ${generateLicenseBadge(license)}
 
 ## Description
 

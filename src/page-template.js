@@ -50,8 +50,8 @@ var generateTableOfContents = function(templateData) {
     tOCArrayKeys.forEach((item,index) => {
         if (index != 0 && tOCArrayValues[index] != '') {
             tOC += `
-            - [${index}: ${item}] (#${item})
-            `;
+- [${index}: ${item}] (#${item})
+`;
         }
     });
     return tOC;

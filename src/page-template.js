@@ -61,42 +61,42 @@ var generateTableOfContents = function(templateData) {
 module.exports = templateData => {
     const {title, description, installation, usage, contribution, license, tests, ...questionSec} = templateData;
     return `
-    # <${title}>         ${generateLicenseBadge(license)}
+# <${title}>         ${generateLicenseBadge(license)}
 
-    ## Description
+## Description
 
-    ${description}
+${description}
 
-    ## Table of Contents (Optional)
+## Table of Contents (Optional)
 
-    ${generateTableOfContents(templateData)}
+${generateTableOfContents(templateData)}
 
-    ## Installation
+## Installation
  
-    ${installation}
+${installation}
 
-    ## Usage
+## Usage
 
-    ${usage}
+${usage}
     
 
-    ## Credits
+## Credits
 
-    ${contribution}
-
-
-    ## License
-
-    ${license}
+${contribution}
 
 
-    ## Tests
+## License
 
-    ${tests}
+${license}
 
-    ## Questions
 
-    ${generateQuestionSection(questionSec)}
+## Tests
+
+${tests}
+
+## Questions
+
+${generateQuestionSection(questionSec)}
 
     `;
 };

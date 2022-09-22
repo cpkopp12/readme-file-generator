@@ -10,7 +10,7 @@ Email: ${email}
     }
     if (githubLink != ''){
         questionsTemplate += `
-GitHub Link: [${githubLink}](#${githubLink})
+GitHub Link: [${githubLink}](${githubLink})
 `;
     }
     if (instructions != ''){

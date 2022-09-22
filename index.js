@@ -27,9 +27,11 @@ const questions = [
         message: 'Enter usage information:'
     },
     {
-        type: 'input',
+        type: 'list',
         name: 'license',
-        message: 'Enter license information:'
+        message: 'Choose a license:',
+        choices: ['none','MIT License', 'GNU GPLv3', 'GNU AGPLv3', 'GNU LGPLv3','Mozilla Public License 2.0', 'Apache License 2.0']
+
     },
     {
         type: 'input',
@@ -50,6 +52,11 @@ const questions = [
         type: 'input',
         name: 'githubLink',
         message: 'Enter link to Git Hub:'
+    },
+    {
+        type: 'input',
+        name: 'instructions',
+        message: 'Enter contact instructions:'
     }
 ];
 
@@ -78,11 +85,12 @@ testData = {
     description: 'My Description',
     installation: 'My Installation',
     usage: 'My Usage',
-    license: 'My license',
+    license: 'MIT License',
     contribution: 'My contribution',
     tests: 'My tests',
     email: 'my email',
-    githubLink: 'my git link'
+    githubLink: 'my git link',
+    instructions: 'my instructions'
 };
 var template = generateTemplate(testData);
 writeMarkdown(template)

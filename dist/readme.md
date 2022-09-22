@@ -1,5 +1,5 @@
 
-    # <My Title>
+    # <My Title>         [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
     ## Description
 
@@ -24,6 +24,8 @@
             
             - [8: githubLink] (#githubLink)
             
+            - [9: instructions] (#instructions)
+            
 
     ## Installation
  
@@ -41,7 +43,7 @@
 
     ## License
 
-    My license
+    MIT License
 
 
     ## Tests
@@ -50,7 +52,8 @@
 
     ## Questions
 
-    my email 
-    my git link
+    Email: my email
+        GitHub Link: [my git link] (#my git link)
+        Contact Instructions: my instructions
 
     
